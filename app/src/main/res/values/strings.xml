@@ -13,4 +13,7 @@
     <string name="recipes">Recipes</string>
     <string name="favorites">Favorites</string>
     <string name="time">By time</string>
+    <string name="my_account">My account</string>
+    <string name="log_out">Log Out</string>
+    <string name="delete_account">Delete Account</string>
 </resources>

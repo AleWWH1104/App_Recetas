@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.my_recipes_app.app_recetas.R
@@ -79,24 +80,21 @@ fun Sign_Up(){
                     )
                 }
             }
-            Column(
-                verticalArrangement = Arrangement.spacedBy(8.dp),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier.align(Alignment.CenterHorizontally).padding(bottom = 50.dp)
-            ){
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.padding(50.dp)
+            )
+            {
                 Text(
                     text = stringResource(id = R.string.yes_member),
                     style = MaterialTheme.typography.bodySmall
                 )
                 TextButton(
-                    onClick = {},
-                    modifier = Modifier
-                        .fillMaxWidth(0.4f) // Hace que el botón sea cuadrado
-                        .background(Color(0xFF5e503f), shape = RoundedCornerShape(10.dp))
+                    onClick = {}
                 ) {
                     Text(
                         text = stringResource(id= R.string.sign_in),
-                        style = MaterialTheme.typography.labelMedium
+                        style = MaterialTheme.typography.labelMedium.copy(textDecoration = TextDecoration.Underline)
                     )
                 }
             }
