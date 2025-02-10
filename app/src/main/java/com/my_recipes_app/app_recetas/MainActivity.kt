@@ -4,13 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import com.my_recipes_app.app_recetas.ui.recipes.view.Add_Recipe_Screen
 import com.my_recipes_app.app_recetas.ui.theme.App_RecetasTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             App_RecetasTheme {
-
+                Add_Recipe_Screen()
             }
         }
     }

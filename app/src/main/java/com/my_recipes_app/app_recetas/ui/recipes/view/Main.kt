@@ -20,7 +20,7 @@ import com.my_recipes_app.app_recetas.R
 
 @Preview
 @Composable
-fun Home_App(){
+fun Home_App_Screen(){
     Scaffold(
         bottomBar = { Nav_Bar() }
     ) { paddingValues ->
@@ -88,7 +88,7 @@ fun Home_App(){
                 contentPadding = PaddingValues(16.dp),
                 modifier = Modifier.padding(20.dp)
             ) {
-                items(4) { meal ->
+                items(4) { recipe ->
                     Recipe_Card()
                 }
             }

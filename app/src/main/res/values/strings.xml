@@ -16,4 +16,13 @@
     <string name="my_account">My account</string>
     <string name="log_out">Log Out</string>
     <string name="delete_account">Delete Account</string>
+    <string name="name_recipe">Recipe Name</string>
+    <string name="preparation_time">Preparation time (min):</string>
+    <string name="add_favorites">Add to favorites?</string>
+    <string name="upload_photo">Upload photo</string>
+    <string name="add_ingredients">Add all ingredients</string>
+    <string name="preparation_recipe">Preparation</string>
+    <string name="all_ingredients">Ingredients</string>
+    <string name="description_recipe">Write how you prepare this delicious recipe....</string>
+    <string name="save_recipe">Save</string>
 </resources>

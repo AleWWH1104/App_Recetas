@@ -20,7 +20,7 @@ import com.my_recipes_app.app_recetas.R
 @OptIn(ExperimentalMaterial3Api::class)
 @Preview
 @Composable
-fun Sign_In(){
+fun Sign_In_Screen(){
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -49,7 +49,7 @@ fun Sign_In(){
                     onValueChange = {},
                     label = { Text(text= stringResource( id =  R.string.email))},
                     colors = TextFieldDefaults.textFieldColors(
-                        containerColor = Color.White
+                        containerColor = Color.White, focusedIndicatorColor = Color(0xFF5e503f)
                     )
                 )
                 TextField(
@@ -57,7 +57,7 @@ fun Sign_In(){
                     onValueChange = {},
                     label = { Text(text= stringResource( id =  R.string.password))},
                     colors = TextFieldDefaults.textFieldColors(
-                        containerColor = Color.White
+                        containerColor = Color.White, focusedIndicatorColor = Color(0xFF5e503f)
                     )
                 )
                 TextButton(
@@ -85,7 +85,7 @@ fun Sign_In(){
                 ) {
                     Text(
                         text = stringResource(id= R.string.sign_up),
-                        style = MaterialTheme.typography.labelMedium.copy(textDecoration = TextDecoration.Underline)
+                        style = MaterialTheme.typography.labelMedium.copy(textDecoration = TextDecoration.Underline, color = Color(0xFF5e503f))
                     )
                 }
             }
