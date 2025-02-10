@@ -15,12 +15,14 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.my_recipes_app.app_recetas.R
+import com.my_recipes_app.app_recetas.navigation.NavigationState
 
 @OptIn(ExperimentalMaterial3Api::class)
-@Preview
+//@Preview
 @Composable
-fun Sign_Up_Screen(){
+fun Sign_Up_Screen(navController: NavController){
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -90,7 +92,7 @@ fun Sign_Up_Screen(){
                     style = MaterialTheme.typography.bodySmall
                 )
                 TextButton(
-                    onClick = {}
+                    onClick = {navController.navigate(NavigationState.SignIn.route)}
                 ) {
                     Text(
                         text = stringResource(id= R.string.sign_in),
